@@ -9,7 +9,7 @@ import android.util.Log
  */
 
 class FlurryAnalyticsTracker : AnalyticsTracker {
-    override fun sendEvent(name: String, properties: Map<String, String>) {
+    override fun sendEvent(name: String, properties: Map<String, String>?) {
         Log.d("FlurryAnalyticsTracker", "Sending event $name with properties $properties")
     }
 

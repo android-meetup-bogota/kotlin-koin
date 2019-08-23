@@ -10,7 +10,7 @@ import android.content.Context
 
 interface AnalyticsTracker {
 
-    fun sendEvent(name: String, properties: Map<String, String>)
+    fun sendEvent(name: String, properties: Map<String, String>?)
 
     fun initConfig(context: Context)
 }
