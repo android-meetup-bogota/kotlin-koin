@@ -10,7 +10,8 @@ import android.util.Log
 
 class FlurryAnalyticsTracker : AnalyticsTracker {
     override fun sendEvent(name: String, properties: Map<String, String>?) {
-        Log.d("FlurryAnalyticsTracker", "Sending event $name with properties $properties")
+        Log.d("FlurryAnalyticsTracker",
+            "Sending event $name with properties $properties")
     }
 
     override fun initConfig(context: Context) {
